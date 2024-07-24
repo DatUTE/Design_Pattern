@@ -1,0 +1,13 @@
+bin_PROGRAMS = main
+
+main_SOURCES = main.cpp
+
+main_SOURCES += \
+    src/Manager.cpp \
+    src/Staff.cpp \
+    src/Subject.cpp \
+    src/Tester.cpp    
+
+AM_CPPFLAGS = \
+      -I inc \
+      -I if
