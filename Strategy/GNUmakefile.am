@@ -1,0 +1,12 @@
+bin_PROGRAMS = main
+
+main_SOURCES = main.cpp
+
+main_SOURCES += \
+    src/CommonVariable.cpp \
+    src/Context.cpp 
+
+AM_CPPFLAGS = \
+      -I inc \
+      -I if \
+      -std=gnu++17
